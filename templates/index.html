@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plant Disease Detection</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+
+<body>
+  <div id="intro-section">
+    <h1>Leaf</h1>
+    <h2>Plant Disease Detector</h2>
+    <form id="upload-form" enctype="multipart/form-data">
+      <input type="file" id="file-input" name="file" accept="image/*">
+      <button type="button" onclick="showResultSection()"><b>Detect Disease</b></button>
+    </form>
+  </div>
+  
+  <div id="result-section" style="display: none;">
+    <div id="image-container">
+    <h4>Uploaded Image:</h4>
+      <img id="uploaded-image" src="" alt="Uploaded Image">
+    </div>
+    <div id="result-container">
+      <h4 style="margin-left: .6cm;">Result:</h4>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
